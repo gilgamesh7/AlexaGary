@@ -1,0 +1,23 @@
+{
+  "name": "alexagary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilgamesh7/AlexaGary.git"
+  },
+  "author": "V R Babu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gilgamesh7/AlexaGary/issues"
+  },
+  "homepage": "https://github.com/gilgamesh7/AlexaGary#readme",
+  "dependencies": {
+    "ask-sdk-core": "^2.8.0",
+    "ask-sdk-model": "^1.28.0"
+  }
+}

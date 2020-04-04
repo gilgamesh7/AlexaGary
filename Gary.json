@@ -1,0 +1,96 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "gary phillips",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "How can you help me gary "
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "thank you gary",
+                        "goodbye gary"
+                    ]
+                },
+                {
+                    "name": "HelloWorldIntent",
+                    "slots": [],
+                    "samples": [
+                        "hello",
+                        "how are you",
+                        "say hi",
+                        "hi",
+                        "say hello"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "QuoteIntent",
+                    "slots": [
+                        {
+                            "name": "enemyName",
+                            "type": "AMAZON.FirstName"
+                        }
+                    ],
+                    "samples": [
+                        "And how about {enemyName}",
+                        "And what can I do about {enemyName}",
+                        "I have a problem Gary",
+                        "I have a problem"
+                    ]
+                },
+                {
+                    "name": "FemaleVoiceIntent",
+                    "slots": [],
+                    "samples": [
+                        "Why do you have a female voice gary "
+                    ]
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "QuoteIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "enemyName",
+                            "type": "AMAZON.FirstName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1078639948162.607280947603"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1078639948162.607280947603",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Who do you have a problem with ?"
+                    }
+                ]
+            }
+        ]
+    }
+}
